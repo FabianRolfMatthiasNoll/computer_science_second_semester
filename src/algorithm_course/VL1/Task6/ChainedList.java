@@ -1,8 +1,5 @@
 package algorithm_course.VL1.Task6;
 
-import algorithm_course.VL1.Task5.Object;
-import algorithm_course.VL1.Task5.Queue;
-
 public class ChainedList<T> {
 
     private class Cell<T>{
@@ -14,7 +11,7 @@ public class ChainedList<T> {
         }
     }
 
-    private Cell<T> anchor; // points to the newest Cell Element
+    private Cell<T> anchor; // points to the first Cell Element
 
     public void add(T o){
         Cell<T> newCell = new Cell<T>(o);

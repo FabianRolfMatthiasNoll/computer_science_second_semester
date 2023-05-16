@@ -15,7 +15,6 @@ public class Main {
                         float amount = (float) (Math.random() * 1000);
                         account.deposit(amount);
                         System.out.println(Thread.currentThread().getName() + " deposited " + amount + ", balance = " + account.getBalance());
-                        Thread.sleep(1000);
                     }
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -28,7 +27,6 @@ public class Main {
                         float amount = (float) (Math.random() * 1000);
                         account.withdraw(amount);
                         System.out.println(Thread.currentThread().getName() + " withdrew " + amount + ", balance = " + account.getBalance());
-                        Thread.sleep(1000);
                     }
                 } catch (InterruptedException e) {
                     e.printStackTrace();
